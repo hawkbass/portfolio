@@ -24,7 +24,9 @@ export default function AboutPage() {
           description={professionalSummary}
         />
 
-            {/* Stats */}
+        {/* Stats */}
+        <section className="px-8 relative">
+          <div className="max-w-6xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
