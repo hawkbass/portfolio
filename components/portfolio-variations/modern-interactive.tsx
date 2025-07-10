@@ -19,6 +19,7 @@ import {
   X,
 } from "lucide-react"
 import { portfolioData } from "@/lib/data"
+import { getImagePath } from "@/lib/utils"
 import { useState, useRef } from "react"
 import { Wrench, Accessibility } from "lucide-react"
 import Header from "@/components/header"
@@ -479,7 +480,7 @@ export default function ModernInteractive() {
                       transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                     >
                       <img
-                        src="/images/inclusive-design-system-homepage.png"
+                        src={getImagePath("/images/inclusive-design-system-homepage.png")}
                         alt="Inclusive Design System Homepage Screenshot"
                         className="object-cover w-full h-full rounded-2xl border border-gray-200 shadow-lg"
                         style={{ maxHeight: '100%', maxWidth: '100%' }}

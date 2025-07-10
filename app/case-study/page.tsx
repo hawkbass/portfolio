@@ -10,6 +10,7 @@ import Header from "@/components/header"
 import AnimatedBackground from "@/components/animated-background"
 import HeroSection from "@/components/hero-section"
 import SectionTitle from "@/components/section-title"
+import { getImagePath } from "@/lib/utils"
 
 export default function CaseStudyPage() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -429,7 +430,7 @@ export default function CaseStudyPage() {
 
                 <div className="aspect-[4/3] bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl flex items-center justify-center">
                   <img
-                    src="/images/inclusive-design-system-homepage.png"
+                    src={getImagePath("/images/inclusive-design-system-homepage.png")}
                     alt="Inclusive Design System Homepage Screenshot"
                     className="object-cover w-full h-full rounded-2xl border border-gray-200 shadow-lg mx-auto block"
                     style={{ maxHeight: '100%', maxWidth: '100%' }}

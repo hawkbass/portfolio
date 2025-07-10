@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowUpRight, ExternalLink, Github, Calendar } from "lucide-react"
 import { portfolioData } from "@/lib/data"
 import Header from "@/components/header"
+import { getImagePath } from "@/lib/utils"
 
 const portfolioProjects = [
   {
